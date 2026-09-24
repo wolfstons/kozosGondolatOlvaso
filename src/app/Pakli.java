@@ -58,10 +58,9 @@ public class Pakli {
         lapok = ujPakli;
     }
 
-    public Lap ezVolt() {
-        if (db > 0) {
-            return lapok[--db];
-        }
-        return null;
+    public void ezVolt() {
+        
+   System.out.println(lapok[11]);
+    
     }
 }
