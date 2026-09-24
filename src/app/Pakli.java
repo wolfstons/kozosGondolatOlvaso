@@ -60,7 +60,7 @@ public class Pakli {
 
     public void ezVolt() {
         
-   System.out.println(lapok[11]);
+  System.out.println("A kiválasztott kártya: " + lapok[11]);
     
     }
 }
