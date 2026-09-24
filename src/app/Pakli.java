@@ -1,9 +1,7 @@
-
 package app;
 
-import java.util.Random;
-
 public class Pakli {
+
     private Lap[] lapok = new Lap[21];
     private int db = 0;
 
@@ -28,17 +26,36 @@ public class Pakli {
         }
     }
 
-    public void kever(int hanyszor) {
-        Random rnd = new Random();
+    public void kever(int oszlop) {
+        Lap[] ujPakli = new Lap[21];
 
-        for (int i = 0; i < hanyszor; i++) {
-            int a = rnd.nextInt(lapok.length);
-            int b = rnd.nextInt(lapok.length);
+        switch (oszlop) {
+            case 1:
+                for (int i = 0; i < 7; i++) {
+                    ujPakli[i] = lapok[20 - i * 3];
+                    ujPakli[i + 7] = lapok[19 - i * 3];
+                    ujPakli[i + 14] = lapok[18 - i * 3];
+                }
+                break;
 
-            Lap seged = lapok[a];
-            lapok[a] = lapok[b];
-            lapok[b] = seged;
+            case 2:
+                for (int i = 0; i < 7; i++) {
+                    ujPakli[i] = lapok[19 - i * 3];
+                    ujPakli[i + 7] = lapok[20 - i * 3];
+                    ujPakli[i + 14] = lapok[18 - i * 3];
+                }
+                break;
+
+            case 3:
+                for (int i = 0; i < 7; i++) {
+                    ujPakli[i] = lapok[19 - i * 3];
+                    ujPakli[i + 7] = lapok[18 - i * 3];
+                    ujPakli[i + 14] = lapok[20 - i * 3];
+                }
+                break;
         }
+
+        lapok = ujPakli;
     }
 
     public Lap ezVolt() {
