@@ -32,25 +32,25 @@ public class Pakli {
         switch (oszlop) {
             case 1:
                 for (int i = 0; i < 7; i++) {
-                    ujPakli[i] = lapok[20 - i * 3];
-                    ujPakli[i + 7] = lapok[19 - i * 3];
-                    ujPakli[i + 14] = lapok[18 - i * 3];
+                    ujPakli[i] = lapok[19 - i * 3];
+                    ujPakli[i + 7] = lapok[18 - i * 3];
+                    ujPakli[i + 14] = lapok[20 - i * 3];
                 }
                 break;
 
             case 2:
                 for (int i = 0; i < 7; i++) {
-                    ujPakli[i] = lapok[19 - i * 3];
-                    ujPakli[i + 7] = lapok[20 - i * 3];
-                    ujPakli[i + 14] = lapok[18 - i * 3];
+                    ujPakli[i] = lapok[18 - i * 3];
+                    ujPakli[i + 7] = lapok[19 - i * 3];
+                    ujPakli[i + 14] = lapok[20 - i * 3];
                 }
                 break;
 
             case 3:
                 for (int i = 0; i < 7; i++) {
-                    ujPakli[i] = lapok[19 - i * 3];
-                    ujPakli[i + 7] = lapok[18 - i * 3];
-                    ujPakli[i + 14] = lapok[20 - i * 3];
+                    ujPakli[i] = lapok[18 - i * 3];
+                    ujPakli[i + 7] = lapok[20 - i * 3];
+                    ujPakli[i + 14] = lapok[19 - i * 3];
                 }
                 break;
         }

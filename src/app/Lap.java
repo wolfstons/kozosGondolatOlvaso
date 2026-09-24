@@ -24,5 +24,10 @@ public class Lap{
         return szin + " " + ertek;
     }
 
+    @Override
+    public String toString() {
+        return "Lap{" + "ertek=" + ertek + ", szin=" + szin + '}';
+    }
+    
     
 }
